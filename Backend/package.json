@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:css": "postcss public/src/input.css -o public/src/output.css"
   },
   "author": "Tushar Sharma",
   "license": "ISC",
@@ -14,6 +15,12 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
+    "nodemon": "^3.1.2",
+    "postcss": "^8.4.38",
+    "postcss-cli": "^11.0.0",
     "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
   }
 }
