@@ -4,9 +4,8 @@ import { Socket , Server}  from "socket.io";
 import http from "http"
 import path from "path";
 import { fileURLToPath } from 'url';
-import dotenv from "dotenv";
-dotenv.config() ;
-const Port = process.env.PORT || 3000 ;
+import { log } from "console";
+
 const app = express() ;
 app.set("view engine" , "ejs") ;
 const __filename = fileURLToPath(import.meta.url)
@@ -74,4 +73,4 @@ uniquesocket.on("move" , (move)=>{
 })
 
 })
-server.listen(Port , ()=> console.log("Connected"))
+server.listen(3000 , ()=> console.log("Connected"))
